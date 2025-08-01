@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/ac42c3b1f7.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=1024, initial-scale=1.0, user-scalable=no">
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div id="sectionlogin" class="bodybhai">
+
+        <div class="container">
+
+            <!--  <h1 class="h11">🐾 Welcome Back, Human!</h1> -->
+            <div class="scrolling-text-container">
+                <div class="scrolling-text">
+                    🐾 Welcome Back, Human!
+                </div>
+            </div>
+
+
+            <img src="https://res.cloudinary.com/therohandevloper/image/upload/v1752775070/dog_zkfs3h.gif" class="dogimage" alt="doggo" />
+
+            <!-- Login Form -->
+            <div id="login-form" class="loginsfrom">
+                <input class="inputhai" type="email" id="login-email" placeholder="📧 Email" autocomplete="username" />
+                <input class="inputhai" type="password" id="login-password" placeholder="🔒 Password" autocomplete="current-password" />
+
+
+                <div class="d-flex flex-row justify-content-center">
+                    <button id="btn-redirect" class="playzone hidden">Go To Dashboard >>></button>
+                </div>
+                <button id="btn-logout" class="btn-link hidden buttonhai">Logout</button>
+
+                <button id="btn-login" class="btn-login buttonhai">Login</button>
+                <button id="btn-google-signin" class="btn-google buttonhai">Sign in with Google</button>
+
+                <button id="btn-show-register" class="btn-link buttonhai" type="button">Don't have an account? Register</button>
+                <button id="btn-show-reset" class="btn-link buttonhai" type="button">Forgot Password?</button>
+            </div>
+
+            <!-- Register Form -->
+            <div id="register-form" class="hidden">
+                <input class="inputhai" type="text" id="reg-name" placeholder="Name" autocomplete="name" />
+                <input class="inputhai" type="text" id="reg-surname" placeholder="Surname" autocomplete="family-name" />
+                <input class="inputhai" type="number" id="reg-age" placeholder="Age" min="1" max="120" />
+
+                <select class="selecthai" id="reg-gender" autocomplete="sex">
+                    <option value="">Select Gender</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                </select>
+
+                <input class="inputhai" type="date" id="reg-birthday" placeholder="Birthday" max="" />
+                <input class="inputhai" type="email" id="reg-email" placeholder="Email" autocomplete="email" />
+                <input class="inputhai" type="password" id="reg-password" placeholder="Password" autocomplete="new-password" />
+
+                <button id="btn-register" class="btn-register buttonhai">Register</button>
+                <button id="btn-show-login-from-register" class="btn-link buttonhai" type="button">Back to Login</button>
+            </div>
+
+            <!-- Password Reset Form -->
+            <div id="reset-form" class="hidden">
+                <input class="inputhai" type="email" id="reset-email" placeholder="Enter your email" autocomplete="email" />
+
+                <button id="btn-reset-password" class="btn-login buttonhai">Send Password Reset Email</button>
+                <button id="btn-show-login-from-reset" class="btn-link buttonhai" type="button">Back to Login</button>
+            </div>
+
+            <p id="message"></p>
+
+        </div>
+
+
+    </div>
+
+
+
+
+
+    <!-- Firebase SDKs -->
+    <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-auth-compat.js"></script>
+    <script type="text/javascript" src="https://new-assets.ccbp.in/frontend/content/static-ccbp-ui-kit/static-ccbp-ui-kit.js"> </script>
+
+</body>
+
+</html>

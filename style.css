@@ -1,0 +1,671 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+
+/* Reset & base */
+* {
+    box-sizing: border-box;
+}
+
+.bodybhai {
+    font-family: 'Bree Serif', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    color: #fff;
+    padding: 15px;
+    border-radius: 2px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+    animation: glowColors 25s infinite linear;
+    transition: background 2s ease-in-out, box-shadow 2s ease-in-out;
+}
+
+/* Animated gradient color background + matching glow */
+@keyframes glowColors {
+    0% {
+        background: #07f2e3;
+        box-shadow: 0 0 30px #07f2e3;
+    }
+
+    20% {
+        background: #07f2c3;
+        box-shadow: 0 0 30px #07f2c3;
+    }
+
+    40% {
+        background: #f9d423;
+        box-shadow: 0 0 30px #f9d423;
+    }
+
+    60% {
+        background: #24fe41;
+        box-shadow: 0 0 30px #24fe41;
+    }
+
+    80% {
+        background: #24c6dc;
+        box-shadow: 0 0 30px #24c6dc;
+    }
+
+    100% {
+        background: #a64ac9;
+        box-shadow: 0 0 30px #a64ac9;
+    }
+}
+
+/* 
+.bodybhai {
+    font-family: 'Bree Serif', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    color: #fff;
+    padding: 5px;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+    animation: glowColors 30s infinite linear;
+    transition: background 3s, box-shadow 3s;
+}
+
+ @keyframes glowColors {
+    0% {
+        background: #ff4e50;
+        box-shadow: 0 0 30px #ff4e50;
+    }
+
+    20% {
+        background: #fc913a;
+        box-shadow: 0 0 30px #fc913a;
+    }
+
+    40% {
+        background: #f9d423;
+        box-shadow: 0 0 30px #f9d423;
+    }
+
+    60% {
+        background: #24fe41;
+        box-shadow: 0 0 30px #24fe41;
+    }
+
+    80% {
+        background: #24c6dc;
+        box-shadow: 0 0 30px #24c6dc;
+    }
+
+    100% {
+        background: #a64ac9;
+        box-shadow: 0 0 30px #a64ac9;
+    }
+} 
+ */
+/* ***********SCROLLING TEXT*************************
+ */
+.scrolling-text-container {
+    width: 100%;
+    overflow: hidden;
+    background: transparent;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.scrolling-text {
+    display: inline-block;
+    white-space: nowrap;
+    animation: scroll-left 10s linear infinite;
+    font-size: 20px;
+    padding-left: 100%;
+    box-sizing: border-box;
+}
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* ***********************************************
+ */
+
+.container {
+    background: black;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 400px;
+    padding: 30px 40px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
+    text-align: center;
+}
+
+
+.dogimage {
+    border-radius: 50%;
+    width: 130px;
+    margin-bottom: 25px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+}
+
+
+
+.inputhai,
+.selecthai,
+.buttonhai {
+    width: 100%;
+    padding: 14px 18px;
+    margin: 12px 0;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+    outline: none;
+    transition: 0.3s ease;
+    user-select: none;
+    font-family: 'Bree Serif', serif;
+}
+
+
+
+
+
+.inputhai {
+    background-color: #2c2c44;
+    color: #eee;
+}
+
+.inputhai::placeholder {
+    color: #bbb;
+}
+
+.selecthai {
+    background-color: #2c2c44;
+    color: #eee;
+    cursor: pointer;
+}
+
+.inputhai:focus,
+.selecthai:focus {
+    box-shadow: 0 0 10px #764ba2;
+    background-color: #3d3d61;
+}
+
+.buttonhai {
+    cursor: pointer;
+    font-weight: 600;
+    letter-spacing: 1px;
+    box-shadow: 0 8px 15px rgba(118, 75, 162, 0.4);
+    color: white;
+    user-select: none;
+}
+
+.btn-login {
+    background: #ff4081;
+}
+
+.btn-login:hover {
+    background: #e73370;
+}
+
+.btn-register {
+    background: #7b1fa2;
+}
+
+.btn-register:hover {
+    background: #620085;
+}
+
+.btn-google {
+    background: #4285f4;
+}
+
+.btn-google:hover {
+    background: #357ae8;
+}
+
+.btn-link {
+    background: transparent;
+    border: none;
+    color: #9f7aea;
+    cursor: pointer;
+    text-decoration: underline;
+    margin-top: 10px;
+    font-size: 14px;
+    user-select: none;
+}
+
+.btn-link:hover {
+    color: #d8b4fe;
+}
+
+.hidden {
+    display: none !important;
+}
+
+#message {
+    font-family: 'Bree Serif', serif;
+    margin-top: 18px;
+    font-weight: 600;
+    min-height: 24px;
+    user-select: none;
+}
+
+#message.error {
+    color: #ff6b6b;
+}
+
+#message.success {
+    color: #32d74b;
+}
+
+/* Responsive */
+@media (max-width: 450px) {
+    .container {
+        padding: 25px 20px;
+    }
+}
+
+/* **************Logout button***********************Logout button**************************Logout button******************************Logout button*********************************Logout button*****************************************Logout button*****************************************Logout button**************************************** */
+
+#btn-logout {
+    font-family: 'Bree Serif', serif;
+    background: transparent;
+    border: none;
+    color: #ff6b6b;
+    cursor: pointer;
+    text-decoration: underline;
+    margin-top: 20px;
+    font-size: 15px;
+    font-weight: 600;
+    user-select: none;
+    display: inline-block;
+}
+
+#btn-logout:hover {
+    color: #ff3b3b;
+}
+
+hidden {
+    display: none !important;
+}
+
+
+/* **************Logoutbutton2**************************Logoutbutton2***************************Logoutbutton2************************************************************Logoutbutton2*******************************Logoutbutton2**************************
+Styling for logoutbutton2
+#logoutbutton2 {
+    position: relative;
+    background: #222;
+    color: #fff;
+    border: 2px solid #ff00ff;
+    font-size: 16px;
+    padding: 14px 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 10px;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5), 0 0 30px rgba(255, 0, 255, 0.6);
+    transition: all 0.3s ease-in-out;
+    background-color: #111;
+    user-select: none;
+    z-index: 1;
+}
+
+#logoutbutton2:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background: rgba(255, 0, 255, 0.15);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    animation: glowing 1.5s infinite;
+    z-index: -1;
+}
+
+#logoutbutton2:hover {
+    background-color: #222;
+    color: #ff00ff;
+    box-shadow: 0 0 30px rgba(255, 0, 255, 0.7), 0 0 40px rgba(0, 0, 0, 0.6);
+    transform: scale(1.05);
+}
+
+#logoutbutton2:active {
+    transform: scale(1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6), 0 0 30px rgba(255, 0, 255, 1);
+}
+
+@keyframes glowing {
+    0% {
+        width: 200%;
+        height: 200%;
+        opacity: 0.3;
+    }
+
+    50% {
+        width: 220%;
+        height: 220%;
+        opacity: 0.6;
+    }
+
+    100% {
+        width: 200%;
+        height: 200%;
+        opacity: 0.3;
+    }
+} */
+
+/* ****************************/
+
+.buttonss {
+    font-family: 'Bree Serif', serif;
+    position: relative;
+    width: 180px;
+    height: 50px;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    color: white;
+    justify-content: center;
+    border: none;
+    padding: px;
+    border-radius: 10px;
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 1;
+    transition: opacity 0.6s ease-in-out, transform 0.3s ease-in-out;
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.6);
+}
+
+.hiddenn {
+    opacity: 0;
+    pointer-events: none;
+    transform: scale(0.8);
+}
+
+#btn-redirect:not(.hiddenn) {
+    opacity: 1;
+    pointer-events: auto;
+    transform: scale(1);
+}
+
+.buttonss::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    left: -5px;
+    top: -5px;
+    margin: auto;
+    width: 160px;
+    height: 60px;
+    border-radius: 12px;
+    background: linear-gradient(45deg, #ff005f, #00c6ff);
+    z-index: -1;
+    pointer-events: none;
+    transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.buttonss::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(45deg, #fc00ff, #00dbde);
+    transform: scale(0.95);
+    filter: blur(18px);
+    z-index: -2;
+    transition: filter 0.3s ease-out;
+}
+
+.buttonss:hover {
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.6), 0 0 50px rgba(0, 255, 255, 1);
+    transform: scale(1.1);
+    transition: transform 0.3s ease, box-shadow 0.4s ease;
+}
+
+.buttonss:hover::before {
+    transform: rotate(180deg) scale(1.2);
+    filter: blur(30px);
+}
+
+.buttonss:hover::after {
+    filter: blur(30px);
+}
+
+.buttonss:active {
+    transform: scale(0.95);
+    box-shadow: 0 0 50px rgba(255, 255, 255, 0.8);
+    transition: transform 0.1s ease, box-shadow 0.2s ease-in-out;
+}
+
+.buttonss:active::before {
+    transform: rotate(360deg) scale(0.7);
+}
+
+
+
+
+/* ******************lw-glow-text-btn*******************lw-glow-text-btn***************************************************lw-glow-text-btn********************************************lw-glow-text-btn***********************************************************lw-glow-text-btn*****************************/
+
+/* 
+.lw-glow-text-btn {
+    position: relative;
+    color: #ff4d4d;
+    font-weight: 600;
+    text-decoration: underline;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-size: 16px;
+    display: inline;
+    animation: lw-smooth-blink 1.5s infinite ease-in-out;
+}
+
+@keyframes lw-smooth-blink {
+
+    0%,
+    100% {
+        opacity: 1;
+        text-shadow:
+            0 0 0.5px #ff4d4d,
+            0 0 1px #ff4d4d;
+    }
+
+    50% {
+        opacity: 0.3;
+        text-shadow:
+            0 0 0.3px #ff4d4d;
+    }
+} */
+
+/* ****************lw-glow-text-btn-min***************************************lw-glow-text-btn-min******************************************lw-glow-text-btn-min**********************************************lw-glow-text-btn-min**********************************************lw-glow-text-btn-min*********************************************lw-glow-text-btn-min*********************************************lw-glow-text-btn-min*********************************lw-glow-text-btn-min***************************/
+/* 
+.lw-glow-text-btn-mini {
+    position: relative;
+    color: #007bff;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-size: 14px;
+    animation: lw-smooth-blink-blue 1.5s infinite ease-in-out;
+    text-decoration: underline;
+}
+
+@keyframes lw-smooth-blink-blue {
+
+    0%,
+    100% {
+        opacity: 1;
+        text-shadow:
+            0 0 0.5px #ff4d4d,
+            0 0 1px #ff4d4d;
+    }
+
+    50% {
+        opacity: 0.3;
+        text-shadow:
+            0 0 0.3px #ff4d4d;
+    }
+}
+
+
+
+
+@media(max-width : 700px) {
+
+    .h11 {
+        font-size: 25px;
+    }
+
+    .dogimage {
+        height: 180px;
+    }
+
+    .lw-glow-text-btn {
+        font-size: 12px;
+    }
+
+    .lw-glow-text-btn-mini {
+        font-size: 12px;
+    }
+} */
+
+/* *********************Go To Dashboard Button****************************************************Go To Dashboard Button***************************************************Go To Dashboard Button****************************** */
+/* 
+.button-Dashboard {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 30px;
+    border: 0;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10rem;
+    transition: all 0.02s;
+    font-weight: bold;
+    cursor: pointer;
+    color: rgb(37, 37, 37);
+    z-index: 0;
+    box-shadow: 0 0px 7px -5px rgba(0, 0, 0, 0.5);
+}
+
+.button-Dashboard:hover {
+    background: rgb(193, 228, 248);
+    color: rgb(33, 0, 85);
+}
+
+.button-Dashboard:active {
+    transform: scale(0.97);
+}
+
+.hoverEffect-Dashboard {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.hoverEffect-Dashboard div {
+    background: linear-gradient(90deg,
+            rgba(222, 0, 75, 1) 0%,
+            rgba(191, 70, 255, 1) 49%,
+            rgba(0, 212, 255, 1) 100%);
+    border-radius: 40rem;
+    width: 10rem;
+    height: 10rem;
+    transition: 0.4s;
+    filter: blur(20px);
+    animation: buttonDashboardEffect infinite 3s linear;
+    opacity: 0.5;
+}
+
+.button-Dashboard:hover .hoverEffect-Dashboard div {
+    width: 8rem;
+    height: 8rem;
+}
+
+@keyframes buttonDashboardEffect {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+} */
+
+.playzone {
+    --primary-color: #645bff;
+    --secondary-color: #fff;
+    --hover-color: #111;
+    --arrow-width: 10px;
+    --arrow-stroke: 2px;
+    box-sizing: border-box;
+    border: 0;
+    border-radius: 20px;
+    color: var(--secondary-color);
+    padding: 15px;
+    background: var(--primary-color);
+    display: flex;
+    transition: 0.2s background;
+    align-items: center;
+    gap: 0.6em;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.playzone.arrow-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.playzone .arrow {
+    margin-top: 1px;
+    width: var(--arrow-width);
+    background: var(--primary-color);
+    height: var(--arrow-stroke);
+    position: relative;
+    transition: 0.2s;
+}
+
+.playzone .arrow::before {
+    content: "";
+    box-sizing: border-box;
+    position: absolute;
+    border: solid var(--secondary-color);
+    border-width: 0 var(--arrow-stroke) var(--arrow-stroke) 0;
+    display: inline-block;
+    top: -3px;
+    right: 3px;
+    transition: 0.2s;
+    padding: 3px;
+    transform: rotate(-45deg);
+}
+
+.playzone:hover {
+    background-color: var(--hover-color);
+}
+
+.playzone:hover .arrow {
+    background: var(--secondary-color);
+}
+
+.playzone:hover .arrow:before {
+    right: 0;
+}
