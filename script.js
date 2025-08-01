@@ -86,7 +86,7 @@ document.getElementById('btn-login').onclick = () => {
             showMessage(`🐶 Welcome ${user.user.email}!`);
             logoutBtn.classList.remove('hidden');
             setTimeout(() => {
-                window.location.href = "https://rohanplayzone.ccbp.tech/";
+                window.location.href = "https://rohanplayhub.netlify.app/";
             }, 1500);
         })
         .catch(error => showMessage(`❌ ${error.message}`, true));
@@ -106,7 +106,7 @@ document.getElementById('btn-google-signin').onclick = () => {
             showMessage(`🎉 Hello ${result.user.displayName}!`);
             logoutBtn.classList.remove('hidden');
             setTimeout(() => {
-                window.location.href = "https://rohanplayzone.ccbp.tech/";
+                window.location.href = "https://rohanplayhub.netlify.app/";
             }, 1500);
         })
         .catch(error => showMessage(`❌ ${error.message}`, true));
@@ -156,7 +156,7 @@ window.onload = () => {
 
 // Redirect Btn
 redirectBtn.onclick = () => {
-    window.location.href = "https://rohanplayzone.ccbp.tech/";
+    window.location.href = "https://rohanplayhub.netlify.app/";
 };
 
 
