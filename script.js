@@ -180,3 +180,31 @@ window.addEventListener("load", function() {
         }
     }
 });
+
+// ***********************************************Inspect section Blocking*********************************************************
+
+
+
+document.addEventListener('contextmenu', function(e) {
+    e.preventDefault();
+});
+
+
+
+
+document.onkeydown = function(e) {
+    if (e.keyCode === 123) return false; // F12
+    if (e.ctrlKey && e.shiftKey && e.keyCode === 73) return false; // Ctrl+Shift+I
+    if (e.ctrlKey && e.keyCode === 85) return false; // Ctrl+U
+    if (e.ctrlKey && e.keyCode === 83) return false; // Ctrl+S
+};
+
+
+// ************************************************Code Copy Blocking***********************************************************************************
+
+
+document.addEventListener('copy', function(e) {
+    e.clipboardData.setData('text/plain', 'Copying is disabled!');
+    e.preventDefault();
+});
+
